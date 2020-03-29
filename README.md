@@ -88,3 +88,6 @@ Want more? Make your site live on the internet! There are a lot of ways to go ab
 
 ## What Instructors Are Looking For
 Check out the [feedback template](feedback.md) which lists the items instructors will be looking for as they evaluate your project.
+
+### Development
+1. `npm run site` - spins up a local web server to test the site
