@@ -38,7 +38,7 @@ h6 {
  
 /* Layout */
 
-.p {
+p {
   font-size: 0.8rem;
 }
 
@@ -48,7 +48,7 @@ h6 {
 }
 
 /* revisit this and see if it works for nav */
-.nav .a:link {
+.nav a:link {
   text-decoration: none;
 }
 

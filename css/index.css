@@ -9,33 +9,38 @@ body {
 /* .Iam describes the whole block of content */
 .Iam {
   position: relative;
-  top: 18em;
-  right: 0em;
-  bottom: 10em;
-  left: 15em;
+  top: 35vh;
+  right: 0vh;
+  bottom: 1vh;
+  left: 10vh;
   color: #000000;
 }
 
+.Iam h1 {
+  margin: 10px;
+}
+
 .Iam h3 {
-  height: 50px;
+  margin: 10px;
+  height: 0px;
   float: left;
-  margin-right: 0.3em;
 }
 
 .Iam h4 {
+  margin: 10px;
   float: left;
   overflow: hidden;
   position: relative;
-  height: 50px;
-  top: 40px;
+  height: 30px;
 }
 
 .Iam b {
   position: relative;
   float: left;
   overflow: hidden;
+  top: 15vh;
 
-  /*animation*/
+/*animation*/
 -webkit-animation:move 5s;
    -moz-animation:move 5s;
     -ms-animation:move 5s;
@@ -61,7 +66,15 @@ body {
   white-space: nowrap;
   top: 0;
   left: 0;
+  height: 50px;
+  text-decoration: none;
 }
+
+.Iam a:visited {
+  color: black;
+  text-decoration: none
+}
+
 
 
 @keyframes move{
