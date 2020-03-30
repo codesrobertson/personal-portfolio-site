@@ -1,0 +1,80 @@
+@import "style.css";
+
+html {
+  margin: 0vh;
+}
+
+body {
+  background: #FFFFFF;
+  position: relative;
+  top: 12vh;
+  left: 12vw;
+  right: 30vw;
+  color:#000000;
+}
+
+h2 {
+position: relative;
+margin: 2vh 40vw 2vh 0vw;
+}
+
+/* Come back to this font weight--not taking for some reason. */
+h3 {
+position: relative;
+font-weight:300;
+margin: 2vh 40vw 2vh 0vw;
+}
+
+p {
+position: relative;
+margin: 2vh 40vw 2vh 0vw;
+}
+
+ul {
+position:relative;
+margin: 2vh 40vw 2vh 0vw;
+font-size: 0.8rem;
+}
+
+/* Beginning of button CSS/ Main special effect on page */
+
+.button {
+  background-color: black;
+  position: relative;
+	height: 5%;
+	width: 8%;
+	height: 3vh;
+	margin: 2vh 50vw 2vh 0vw auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+a {
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+	height: 100%;
+	width: 100%;
+	max-height: 40vmin;
+	max-width: 90vmin;
+	border: solid .8px;
+	font-size: 0.9rem;
+  /* font-variation-settings: "wght" 162; */
+	letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 200;
+	transition: font-weight 0.4s;
+	user-select: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button a:hover {
+	font-weight: 500;
+}
+
+.languages {
+  margin: 12vh 40vw 2vh 15vw;
+}
