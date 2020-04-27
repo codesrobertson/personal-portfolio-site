@@ -1,0 +1,42 @@
+@import "style.css";
+
+html {
+  margin: 0vh;
+}
+
+body {
+  background: #FFFFFF;
+  position: relative;
+  top: 12vh;
+  left: 12vw;
+  right: 30vw;
+  color:#000000;
+}
+
+h2 {
+position: relative;
+margin: 2vh 58vw 2vh 0vw;
+}
+
+h3 {
+position: relative;
+font-weight:300;
+margin: 2vh 58vw 2vh 0vw;
+}
+
+p {
+position: relative;
+margin: 2vh 58vw 2vh 0vw;
+}
+
+ul {
+position:relative;
+margin: 2vh 40vw 2vh 0vw;
+font-size: 0.8rem;
+}
+
+img {
+  position: relative;
+  padding: 0;
+  margin: 2vh 600vw 2vh 50vw;
+}

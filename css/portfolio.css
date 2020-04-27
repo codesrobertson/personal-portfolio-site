@@ -13,6 +13,14 @@ body {
   color:#000000;
 }
 
+portfolio {
+  position: relative;
+  top: 12vh;
+  left: 12vw;
+  right: 30vw;
+}
+
+
 h2 {
 position: relative;
 margin: 2vh 40vw 2vh 0vw;
@@ -21,7 +29,21 @@ margin: 2vh 40vw 2vh 0vw;
 h3 {
 position: relative;
 font-weight:300;
-margin: 2vh 40vw 2vh 0vw;
+margin: 2vh 40vw 5vh 0vw;
+text-decoration: none;
+}
+
+h3 a {
+  color: black;
+}
+
+h3 a:hover {
+  text-decoration: none;
+  color: #cc7733;
+}
+
+h6 {
+  position: relative;
 }
 
 p {
@@ -29,12 +51,66 @@ position: relative;
 margin: 2vh 40vw 2vh 0vw;
 }
 
-th, td {
-  width: 5em;
-  height: 4em;
-}
 
-td img {
+/* start of grid content CSS */
+
+td {
+  position: relative;
   width: 200px;
   height: 200px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.image .github, .twitter {
+  left: 80vw;
+  right: 30vw;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0%;
+  background-color: #ededed;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+  left: 0;
+}
+
+.text {
+  color: black;
+  font-size: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: pre-wrap; 
+} 
+
+.text:hover {
+  color: #CC7722;
+  text-decoration: none;
+}
+
+.social {
+  position: relative;
 }

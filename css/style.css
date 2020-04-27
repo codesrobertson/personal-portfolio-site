@@ -47,15 +47,6 @@ p {
   width: 300px; */
 }
 
-/* revisit this and see if it works for nav */
-.nav a:link {
-  text-decoration: none;
-}
-
-[hidden] {
-  display: none;
-}
-
 /* Button Styling */
 
 body {
@@ -98,35 +89,19 @@ body {
 }
 
 .link:hover {
+	color: #CC7722;
 	font-variation-settings: "wght" 662;
 }
 
 /* end Button Styling */
 
-/* Start of Menu Styling */
-
-/*
- Inspiration credit and thanks to Erik Terwan and MIT: https://codepen.io/erikterwan/pen/EVzeRP
- */
-
-
-body
-{
-  margin: 0;
-  padding: 0;
-  
-  /* make it look decent enough */
-  background: #232323;
-  color: #white;
-  font-family: "Lato", sans-serif;
-}
-
+/* Start Navigation Styling */
 #menuToggle
 {
   display: block;
-  position: relative;
+  position: fixed;
   top: 50px;
-  left: 1550px;
+  right: 50px;
   
   z-index: 1;
   
@@ -144,12 +119,13 @@ body
 
 #menuToggle a:hover
 {
-  color: tomato;
+  color: #CC7722;
 }
 
 
 #menuToggle input
 {
+  color: black;
   display: block;
   width: 40px;
   height: 32px;
@@ -176,7 +152,7 @@ body
   margin-bottom: 5px;
   position: relative;
   
-  background: #cdcdcd;
+  background: black;
   border-radius: 3px;
   
   z-index: 1;
@@ -206,7 +182,7 @@ body
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: black;
 }
 
 /*
@@ -234,9 +210,9 @@ body
 {
   position: absolute;
   width: 300px;
-  margin: -100px 0 0 -50px;
+  margin: -100px 0px 0px 0px;
   padding: 50px;
-  padding-top: 155px;
+  padding-top: 125px;
   
   background: #ededed;
   list-style-type: none;
@@ -244,7 +220,7 @@ body
   /* to stop flickering of text in safari */
   
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  transform: translate(100%, 0);
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
@@ -260,5 +236,5 @@ body
  */
 #menuToggle input:checked ~ ul
 {
-  transform: none;
+  transform: translate(-50%, 0);
 }
